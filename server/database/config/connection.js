@@ -4,7 +4,7 @@ require('env2')('.env');
 
 const { NODE_ENV, DB_URL, TEST_DB_URL, DATABASE_URL, DB_BUILD } = process.env;
 
-let dbUrl = 'postgres://{postgres}:{admin}@{localhost}:{5432}/{test}';
+let dbUrl = 'postgres://postgres:admin@localhost:5432/test';
 let ssl = false;
 
 switch (NODE_ENV) {
